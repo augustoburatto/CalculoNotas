@@ -1,5 +1,4 @@
-$(function(){
-
+$(function () {
     var tabela = '<header><div class="container"><h1 class="titulo">Impacta Notas</h1></div></header><main><section class="container"><h2 id="h2">Minhas notas</h2><table class="tabela"></table></section></main>';
     $('body').append(tabela);
 
@@ -18,7 +17,7 @@ $(function(){
     var button = '<div style="margin: 10px;"> <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button> </div>';
     $('form').append(button);
 
-    $('button').click(function(event){
+    $('button').click(function (event) {
         event.preventDefault();
         var ac1_inserir = parseInt($('#atividade1').val());
         var ac2_inserir = parseInt($('#atividade2').val());
@@ -33,8 +32,8 @@ $(function(){
         var ac4_inserir = $('#atividade4').val("");
     });
 
-    $('table').dblclick(function(event){
-        if(event.target.tagName == 'td');
+    $('table').dblclick(function (event) {
+        if (event.target.tagName == 'td');
         event.target.parentNode.remove();
     });
 });
